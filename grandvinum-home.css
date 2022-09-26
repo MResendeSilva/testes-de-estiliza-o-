@@ -1,20 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .background {
-    background-image: url("./Background.jpg");
+    background-image: url("./Background\ desfoque3.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     padding: 0;
+    height: 1000px;
+    
 }
 .header {
-    padding: 15px 0;
+    padding: 10px 0;
     width: 100%;
     
 }
+
+.header .container img{
+    width: 200px;
+}
+
 
 .container {
     margin: 0 auto;
@@ -27,18 +40,19 @@
 .textos a{
     color:white;
     text-decoration: none;
+    font-size: larger;
 }
 
 ul {
     display: flex;
-    width: 350px;
+    width: 600px;
     justify-content: space-between;
     list-style: none;
 }
 .textos li {
     display: flex;
-    margin: 2px px;
-    color: #FFFF;
+    margin: 2px 15px;
+    color: #FFFFFF;
     align-items: center;
     transition: 0.6s;
     position: relative;
@@ -48,7 +62,7 @@ ul {
     content: " ";
     width: 0%;
     height: 2px;
-    background-color:white;
+    background-color:#9F1D35 ;
     position: absolute;
     bottom: -3px;
     left: 0px;
@@ -67,23 +81,37 @@ li {
 
 
 .banner {
-    padding: 100px 100px;
+   padding: 200px 0;
 }
 
 .banner .containerB {
     height: 450px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    
 }
 
 .banner p {
-    width: 500px;
+    padding-left: 50px;
+    width: 800px;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 40px;
+    
 }
 
 .banner b {
     color: #e3b062;
-    text-shadow: -3px 1px 3px black;
+    text-shadow: -3px 1px 10px black;
+    font-weight: 700;
+}
+
+
+.social {
+    height: 1000px;
+    background-image: url("./Imagem\ 4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px black;
 }
